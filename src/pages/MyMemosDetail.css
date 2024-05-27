@@ -4,18 +4,12 @@
   box-sizing: border-box;
 }
 
-#root {
+.container {
   display: flex;
   width: 90%;
   flex-direction: column;
-  margin: 4rem auto;
-}
-
-/* .container {
-  display: flex;
-  width: 90%;
-  flex-direction: column;
-  margin: 4rem auto;
+  margin: 1rem auto;
+  font-size: 16px;
 }
 
 .backPage{
@@ -24,12 +18,13 @@
   border: none;
   cursor: pointer;
   font-size: 16px;
-} */
+  color: #242424;
+}
 
 /* column */
 
 /* Create two equal columns that floats next to each other */
-/* .columnApprove {
+.columnApprove {
   float: left;
   width: 60%;
 
@@ -41,19 +36,19 @@
   justify-content: center;
   align-items: center;
   display: flex;
-} */
+}
 /* Clear floats after the columns */
-/* .row:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
 }
 .row{
   margin-top: 40px;
-} */
+}
 
 /* status button */
-/* .status-buttons {
+.status-buttons {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -66,7 +61,7 @@
   height: 35px;
   border: none;
   border-radius: 21px;
-  cursor: pointer;
+  /* cursor: pointer; */
   font-size: 18px;
 }
 
@@ -90,14 +85,24 @@
   color: #267800;
 }
 
-.orderAprrove{ */
+/* new add */
+.statusOrder{
   /* width: 455px;
   height: 35px; */
-  /* width: 50%;
+  width: 20%;
   padding: 7px 10px;
   margin-top: 30px;
-  background-color: #DBECFD;
-  color: #003389;
+  text-align: center;
+  border-radius: 21px;
+  font-size: 18px;
+}
+
+.orderAprrove{
+  /* width: 455px;
+  height: 35px; */
+  width: 50%;
+  padding: 7px 10px;
+  margin-top: 30px;
   text-align: center;
   border-radius: 21px;
   font-size: 18px;
@@ -107,10 +112,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+  gap: 20px;
+}
 
 /* select page */
-/* .select-page{
+.select-page{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,10 +144,10 @@
   background-color: transparent;
   cursor: pointer;
   font-size: 14px;
-}  */
+} 
 
 /* content doc file */
-/* .boxDoc{
+.boxDoc{
   margin-top: 30px;
   width: 100%;
   height: auto;
@@ -149,11 +155,11 @@
   padding: 200px 100px;
   text-align: center;
   border-radius: 9px;
-  color: #242424; */
+  color: #242424;
 
-/* } */
+}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 
   .columnApprove {
     width: 100%;
@@ -165,16 +171,20 @@
     width: 33.33%;
     font-size: 16px;
   }
+  .order{
+    gap: 10px;
+  }
   .orderAprrove{
-    width: 100%;
+    width: 50%;
     padding: 5px 10px;
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .statusOrder{
+    width: 50%;
+    padding: 5px 10px;
+    margin-top: 30px;
+    font-size: 14px;
   }
 }
-
-@media screen and (max-width: 400px){
-  .status-button{
-    font-size: 13px;
-  }
-} */
